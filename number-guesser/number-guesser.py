@@ -13,15 +13,18 @@ else:
 count = 0
 while True:
     question = input('Type your Guess: ')
-    if guess < int(question):
-        print('You are above the Number')
-        count += 1
-    elif guess > int(question):
-        print('You are below the Number')
-        count += 1
-    elif guess == int(question):
-        print(f'You\'ve guessed the correct Number in {count} times.')
-        break
+    if question.isdigit():
+        if guess < int(question):
+            print('You are above the Number')
+            count += 1
+        elif guess > int(question):
+            print('You are below the Number')
+            count += 1
+        elif guess == int(question):
+            print(f'You\'ve guessed the correct Number in {count} times.')
+            break
+        else:
+            print('Only numbers are allowed')
+            break
     else:
-        print('Only numbers are allowed')
-        break
+        quit()
