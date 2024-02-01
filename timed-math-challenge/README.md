@@ -20,3 +20,4 @@ You can see the progress and time it took you to answer.
 - **Random Module** - this uses python's random module to generate random numbers
 - **Time Module** - python's builtin time module is used to measure the time.
 - **Try, Except Blocks** - this application uses try and except blocks for error handling.
+- **Colors and Bold text** - this application uses bold text outputs and colored terminal text outputs.
