@@ -18,19 +18,15 @@ def get_number_of_turtles():
             print('Enter a digit between 2 and 10.')
     return races
 
-def get_turtle_screen():
+def get_turtle_screen(x):
     screen = turtle.Screen()
     screen.setup(WIDTH, HEIGHT)
     screen.title('Turtle Racer')
-
-x = get_number_of_turtles()
-get_turtle_screen()
-racer = turtle.Turtle()
-random_colors = random.shuffle(COLORS)
-random_colors_array = []
-random_colors_array.append(random_colors)
-racer.shape('turtle')
-racer.color('cyan')
-racer.forward(100)
-print(random_colors_array)
-time.sleep(20)
+    racer = turtle.Turtle()
+    racer2 = turtle.Turtle()
+    racer.shape('turtle')
+    racer2.shape('turtle')
+    racer2.setpos(-250, -250)
+    turtle.mainloop()
+    
+get_turtle_screen(get_number_of_turtles())
